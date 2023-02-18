@@ -1,7 +1,82 @@
 :root {
+    /* Dark Background Colour */
+    --clr-dark: rgb(15, 15, 15);
+    --clr-dark-grey: rgb(45, 45, 45);
+    --clr-grey: rgb(75, 75, 75);
+
+    /* For Gradient */
     --clr-start: rgb(20, 130, 165);
     --clr-mid: rgb(25, 170, 220);
     --clr-end: rgb(70, 90, 235);
+
+    /* For Footer Height */
+    --ft-start-height: 10%;
 }
 
+body {
+    background-image: url("https://images.pexels.com/photos/1933239/pexels-photo-1933239.jpeg?cs=srgb&dl=pexels-stein-egil-liland-1933239.jpg&fm=jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    height: 3000px;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+}
+
+/* Footer and Footer Links */
+footer {
+    background-color: var(--clr-grey);
+
+    /* font-size */
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    height: var(--ft-start-height);
+    width: 100%;
+
+    text-align: center;
+}
+
+footer a {
+    color: inherit;
+}
+
+/* Footer Interactivity */
+.footer-link:hover,
+.social-list-link:hover {
+    opacity: .7;;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer Links */
+.footer-link {
+    display: flex;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+.social-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.social-list-item {
+    padding: 0 5% 0 5%;
+}
+
+.footer-follow-txt {
+    margin-bottom: 0;
+    text-align: center;
+}
