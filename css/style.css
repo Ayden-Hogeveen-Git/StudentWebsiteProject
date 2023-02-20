@@ -10,7 +10,10 @@
     --clr-end: rgb(70, 90, 235);
 
     /* For Footer Height */
-    --ft-start-height: 10%;
+    --ft-start-height: 12.5vh;
+
+    /* Icon Size */
+    --icon-size: 64pt;
 }
 
 body {
@@ -26,6 +29,25 @@ body {
 h1 {
     color: aliceblue;
     text-align: center;
+}
+
+
+/* Big Links Div */
+.links-div {
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
+}
+
+.link-icon {
+    font-size: var(--icon-size);
+
+    padding: 5%;
+}
+
+.link-icon:hover {
+    opacity: 0.5;
 }
 
 /* Footer and Footer Links */
